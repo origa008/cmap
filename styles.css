@@ -1,7 +1,7 @@
 /* cmap — "Calm editorial trust" theme
    Palette: off-white #FAFAF8 · card gray #F3F3F1 · forest-black #0F1F17
    Accent: lime #B5F24B — highlights, tags, ticker, small active elements only.
-   Type: Inter Tight, light weights, tight tracking, sentence case. */
+   Type: Inter Tight body (light weights); Archivo Expanded 500 headings. */
 
 :root {
   --paper: #FAFAF8;
@@ -17,6 +17,7 @@
   --radius-lg: 28px;
   --max: 1120px;
   --font: "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-head: "Archivo", "Inter Tight", "Inter", sans-serif;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -53,11 +54,11 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Type ---------- */
 
-h1, h2, h3 { font-weight: 300; letter-spacing: -0.03em; line-height: 1.04; }
+h1, h2, h3 { font-family: var(--font-head); font-stretch: 125%; font-weight: 500; letter-spacing: -0.01em; line-height: 1.04; }
 
 .display {
   font-size: clamp(2.6rem, 7.2vw, 4.5rem); /* 42–72px */
-  letter-spacing: -0.035em;
+  letter-spacing: -0.01em;
 }
 
 h2 { font-size: clamp(2rem, 5vw, 3.25rem); }
@@ -88,7 +89,7 @@ h2 { font-size: clamp(2rem, 5vw, 3.25rem); }
 .hl {
   background: var(--lime);
   padding: 0 0.18em;
-  border-radius: 4px;
+  border-radius: 14px;
   white-space: nowrap;
 }
 
@@ -294,7 +295,7 @@ section { padding: 88px 0; position: relative; z-index: 1; }
 }
 .scroll-fade .w { color: rgba(15, 31, 23, 0.14); transition: color 0.35s ease; }
 .scroll-fade .w.lit { color: var(--ink); }
-.scroll-fade .w.lit.lit-lime { color: var(--ink); background: var(--lime); border-radius: 4px; padding: 0 0.12em; }
+.scroll-fade .w.lit.lit-lime { color: var(--ink); background: var(--lime); border-radius: 14px; padding: 0 0.12em; }
 
 /* Stats row */
 .stats {
