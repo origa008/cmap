@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cmap — From your board marks to your first salary</title>
+  <meta name="description" content="A verified career roadmap for Matric and Inter students in Pakistan. Real closing merits, real fees, real first salaries — one clear plan, delivered on WhatsApp for Rs 999.">
+  <meta property="og:title" content="cmap — From your board marks to your first salary">
+  <meta property="og:description" content="Verified merits. Real salaries. One clear plan. A career roadmap for Matric & Inter students in Pakistan.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1F17'/%3E%3Ctext x='32' y='44' font-family='Arial' font-size='34' fill='%23B5F24B' text-anchor='middle'%3Ec%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- Floating pill nav -->
+  <nav class="nav" aria-label="Main">
+    <a href="#top" style="text-decoration:none;color:#fff"><span class="wordmark">cmap<em>.</em></span></a>
+    <div class="nav-links">
+      <a href="#roadmaps">Roadmaps</a>
+      <a href="#how">How it works</a>
+      <a href="#price">Price</a>
+    </div>
+    <a href="#price" class="btn btn-lime btn-sm">Get my roadmap</a>
+  </nav>
+
+  <!-- 1 · Hero -->
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div style="text-align:center;max-width:820px;margin:0 auto;">
+        <p class="eyebrow" style="justify-content:center;">Career roadmaps · Matric &amp; Inter · Pakistan</p>
+        <h1 class="display" style="margin:20px 0 0;">From your board marks<br>to your <span class="hl">first salary</span><i class="dot-icon" aria-hidden="true">↗</i></h1>
+        <div class="tag-row" style="justify-content:center;">
+          <span class="tag lime">Verified merits</span>
+          <span class="tag">Real salaries</span>
+          <span class="tag">One clear plan</span>
+        </div>
+        <p class="lede" style="margin:0 auto;">
+          Every year, millions of students pick a field on a guess — then find out too late that the
+          merit was out of reach, or the jobs weren't there. cmap gives you one clear plan, built on
+          real closing merits, real fees and real salaries.
+        </p>
+      </div>
+
+      <div class="hero-grid" style="margin-top:56px;">
+        <!-- Phone frame: sample roadmap -->
+        <div class="phone" aria-label="Sample roadmap preview">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-head">
+              <span class="p-name">Ahmed · Pre-Medical</span>
+              <span class="p-tag">SAMPLE</span>
+            </div>
+            <p class="phone-sub">FSc Part-I 92% · Matric 95% · Lahore</p>
+            <div class="mini-row">
+              <span class="m-label">Aggregate target</span>
+              <span class="m-value">93.5%+<small>for a public MBBS seat</small></span>
+            </div>
+            <div class="mini-row">
+              <span class="m-label">Top target</span>
+              <span class="m-value">KEMU, Lahore<small>closing 94.87% · 2025–26</small></span>
+            </div>
+            <div class="mini-row">
+              <span class="m-label">MDCAT 2027</span>
+              <span class="m-value">Not announced yet<small>2026 sitting: 20 Sept</small></span>
+            </div>
+            <div class="mini-row">
+              <span class="m-label">First salary</span>
+              <span class="m-value">Rs 50k–100k / month<small>house job, public hospital</small></span>
+            </div>
+            <div class="phone-foot">
+              <span>Full sample below ↓</span>
+              <strong>Rs 999 · one time</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero form -->
+        <div class="form-card">
+          <h3>Get my roadmap</h3>
+          <p class="form-sub">Rs 999, one time. We reply on WhatsApp.</p>
+          <form class="roadmap-form" novalidate>
+            <div class="form-fields">
+              <div class="field" data-field="name">
+                <label for="name-hero">Your name</label>
+                <input id="name-hero" name="name" type="text" autocomplete="name" placeholder="e.g. Ahmed Raza">
+                <p class="error"></p>
+              </div>
+              <div class="field" data-field="whatsapp">
+                <label for="wa-hero">WhatsApp number</label>
+                <input id="wa-hero" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="0300-1234567">
+                <p class="hint">Your roadmap arrives on this number.</p>
+                <p class="error"></p>
+              </div>
+              <div class="form-row">
+                <div class="field" data-field="class">
+                  <label for="class-hero">Class</label>
+                  <select id="class-hero" name="class">
+                    <option value="Matric" selected>Matric</option>
+                    <option value="Inter">Inter</option>
+                  </select>
+                </div>
+                <div class="field" data-field="track">
+                  <label for="track-hero">Track</label>
+                  <select id="track-hero" name="track">
+                    <option value="Stream choice" selected>Stream choice</option>
+                    <option value="Pre-Medical">Pre-Medical</option>
+                    <option value="Pre-Engineering">Pre-Engineering</option>
+                    <option value="CS/IT">CS / IT</option>
+                    <option value="Commerce">Commerce</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field" data-field="marks">
+                <label for="marks-hero">Marks <span style="text-transform:none;letter-spacing:0;">(optional)</span></label>
+                <input id="marks-hero" name="marks" type="text" placeholder="e.g. 9th: 85% · Matric: 92%">
+              </div>
+              <button type="submit" class="btn btn-dark btn-lg">Get my roadmap →</button>
+              <p class="tiny" style="margin-top:12px;text-align:center;">No account. No app to install. Your number is only used to send your roadmap.</p>
+              <div class="form-status" role="alert"></div>
+            </div>
+          </form>
+          <div class="form-success" role="status">
+            <div class="check">✓</div>
+            <h3>Request received</h3>
+            <p>We'll message you on WhatsApp with your roadmap. Usually within one working day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Lime ticker -->
+  <div class="ticker-band" aria-hidden="true">
+    <div class="ticker">
+      <span>From your board marks to your first salary</span><span>•</span>
+      <span>Verified merits</span><span>•</span>
+      <span>Real salaries</span><span>•</span>
+      <span>One clear plan</span><span>•</span>
+      <span>From your board marks to your first salary</span><span>•</span>
+      <span>Verified merits</span><span>•</span>
+      <span>Real salaries</span><span>•</span>
+      <span>One clear plan</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- 2 · Pain -->
+  <section id="pain">
+    <div class="wrap">
+      <p class="eyebrow reveal">The problem</p>
+      <p class="scroll-fade" style="margin-top:24px;">You choose your field at fifteen, on advice from people who chose theirs twenty years ago. <em>The merit lists moved.</em> The jobs moved. Nobody told you.</p>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <div class="num">8.4<span class="unit">M</span></div>
+          <p class="label">Matric + Inter students enrolled in Pakistan</p>
+          <p class="cite">Economic Survey 2025–26 (secondary 5.42M + higher secondary 2.97M) · <a href="https://arynews.tv/pakistan-pre-primary-enrolment-drops-economic-survey-2025-26" target="_blank" rel="noopener">ARY News</a></p>
+        </div>
+        <div class="stat">
+          <div class="num">10.8–18.3<span class="unit">%</span></div>
+          <p class="label">Graduate unemployment — the range depends on how it is measured</p>
+          <p class="cite">18.3% per Gallup Pakistan / LFS 2024–25; 10.8% per PBS ICLS-13 measure · <a href="https://www.nation.com.pk/24-Sep-2026/degrees-enough" target="_blank" rel="noopener">The Nation</a></p>
+        </div>
+        <div class="stat">
+          <div class="num">1<span class="unit"> : 8,000</span></div>
+          <p class="label">Career counsellors to students in Pakistan's schools</p>
+          <p class="cite">UNESCO 2023 — fewer than 15% of South Asian public schools have a trained counsellor · <a href="https://sindhcourier.com/bridging-the-career-guidance-gap/" target="_blank" rel="noopener">Sindh Courier</a></p>
+        </div>
+        <div class="stat">
+          <div class="num">23.5<span class="unit">%</span></div>
+          <p class="label">Engineering graduates unemployed — doubled in two years</p>
+          <p class="cite">PIDE Knowledge Brief No. 100 — CS 22.6%, agriculture 29.4%, medical 10.8% · <a href="https://pide.org.pk/research/disaggregating-the-graduate-unemployment-in-pakistan/" target="_blank" rel="noopener">PIDE</a></p>
+        </div>
+      </div>
+      <p class="small reveal" style="margin-top:16px;">Every number on this page is from a published source, cited next to the figure. Where sources disagree, we say so — and where a figure can't be verified, we don't print it.</p>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="ruler"></div></div>
+
+  <!-- 3 · How it works -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>Three steps. No app. No account.</h2>
+      </div>
+      <div class="bento">
+        <div class="bento-card reveal">
+          <span class="icon-chip">1</span>
+          <span class="step">STEP 01</span>
+          <h3>Share your marks</h3>
+          <p>Your name, WhatsApp number, class, track and marks. Thirty seconds, on this page — or straight on WhatsApp.</p>
+        </div>
+        <div class="bento-card reveal">
+          <span class="icon-chip">2</span>
+          <span class="step">STEP 02</span>
+          <h3>Get your verified roadmap</h3>
+          <p>We check the latest merit lists, fee schedules and salary data against your marks, then build your plan — checked by a person, not a bot.</p>
+        </div>
+        <div class="bento-card reveal">
+          <span class="icon-chip">3</span>
+          <span class="step">STEP 03</span>
+          <h3>Follow the dated plan</h3>
+          <p>Board exams, entry tests, result dates, application windows — in order, with dates. You always know what comes next.</p>
+        </div>
+        <div class="bento-card photo reveal" style="grid-column:1 / -1;">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80&auto=format&fit=crop" alt="Students studying together" loading="lazy">
+          <span class="cap">Built for the student who has to decide now — not after the merit list is out.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · The five roadmaps (dark index card) -->
+  <section id="index" style="padding-top:0;">
+    <div class="wrap">
+      <div class="dark-card reveal">
+        <p class="eyebrow">The five roadmaps</p>
+        <h2 style="margin:16px 0 14px;">One for every fork in the road.</h2>
+        <p class="lede">Each roadmap follows the same five pillars: where you stand, your field decision, your target list, your exam plan, and your job path. Tap one to see a full sample.</p>
+        <div class="index-list">
+          <button type="button" class="index-row" data-target="rm-stream">
+            <span class="idx">01</span>
+            <span><span class="idx-title">Stream choice</span><span class="idx-sub" style="display:block;">Matric — Pre-Medical, Pre-Engineering or ICS, decided on data</span></span>
+            <span class="idx-arrow">→</span>
+          </button>
+          <button type="button" class="index-row" data-target="rm-premed">
+            <span class="idx">02</span>
+            <span><span class="idx-title">Pre-Medical → MDCAT</span><span class="idx-sub" style="display:block;">Public MBBS needs a 93.5%+ aggregate — see the exact maths</span></span>
+            <span class="idx-arrow">→</span>
+          </button>
+          <button type="button" class="index-row" data-target="rm-preeng">
+            <span class="idx">03</span>
+            <span><span class="idx-title">Pre-Engineering → ECAT</span><span class="idx-sub" style="display:block;">UET, NUST, GIKI — with Fall 2026 closing merits</span></span>
+            <span class="idx-arrow">→</span>
+          </button>
+          <button type="button" class="index-row" data-target="rm-csit">
+            <span class="idx">04</span>
+            <span><span class="idx-title">CS / IT</span><span class="idx-sub" style="display:block;">NUST, FAST, COMSATS, LUMS — and the skills that actually get hired</span></span>
+            <span class="idx-arrow">→</span>
+          </button>
+          <button type="button" class="index-row" data-target="rm-commerce">
+            <span class="idx">05</span>
+            <span><span class="idx-title">Commerce</span><span class="idx-sub" style="display:block;">BBA, Accounting, Finance, CA &amp; ACCA — the test-based route</span></span>
+            <span class="idx-arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Why not ChatGPT -->
+  <section id="why" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Why not just ask ChatGPT?</p>
+        <h2>A chatbot guesses. A roadmap is checked.</h2>
+      </div>
+      <div class="compare reveal">
+        <div class="compare-card muted">
+          <h3>A chatbot answer</h3>
+          <ul>
+            <li><strong>Guesses a merit number</strong> when it doesn't know one — and states it with total confidence.</li>
+            <li><strong>One answer, no dates.</strong> No board schedule, no test windows, no follow-up when the lists move.</li>
+            <li><strong>Trained on old data</strong> — last year's merit, last decade's fees, a salary figure from somewhere else entirely.</li>
+            <li><strong>Same answer for everyone</strong> — Lahore or Quetta, 95% or 75%, it doesn't know your numbers.</li>
+          </ul>
+        </div>
+        <div class="compare-card live">
+          <h3>A cmap roadmap</h3>
+          <ul>
+            <li><strong>Every figure is checked</strong> against a published source — and cited next to the number, so you can verify it yourself.</li>
+            <li><strong>A dated plan:</strong> board exams, entry tests, result dates, application windows — in order.</li>
+            <li><strong>Built for your marks,</strong> your board, your city and your budget. If a target is out of reach, the roadmap says so and shows the next-best option.</li>
+            <li><strong>Checked by a person</strong> before it reaches your WhatsApp. If a figure can't be verified, it's left out — never invented.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="ruler"></div></div>
+
+  <!-- 6 · Picture the result: the five sample roadmaps -->
+  <section id="roadmaps">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Picture the result</p>
+        <h2>Five sample roadmaps, with real numbers.</h2>
+        <p class="lede">Each sample is built for a named student profile, with the same five pillars your roadmap will have. Every figure is sourced — hover the ↗ to see where it came from.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist" aria-label="Sample roadmaps">
+        <button type="button" class="tab" role="tab" data-target="rm-stream" aria-selected="false"><span class="tab-dot"></span>Stream choice</button>
+        <button type="button" class="tab active" role="tab" data-target="rm-premed" aria-selected="true"><span class="tab-dot"></span>Pre-Medical</button>
+        <button type="button" class="tab" role="tab" data-target="rm-preeng" aria-selected="false"><span class="tab-dot"></span>Pre-Engineering</button>
+        <button type="button" class="tab" role="tab" data-target="rm-csit" aria-selected="false"><span class="tab-dot"></span>CS / IT</button>
+        <button type="button" class="tab" role="tab" data-target="rm-commerce" aria-selected="false"><span class="tab-dot"></span>Commerce</button>
+      </div>
+
+      <!-- ============ STREAM CHOICE ============ -->
+      <div class="roadmap-panel" id="rm-stream" role="tabpanel">
+        <div class="profile-strip">
+          <div><span class="p-label">Student</span><span class="p-val">Ayesha</span></div>
+          <div><span class="p-label">Class</span><span class="p-val">9 · BISE Lahore</span></div>
+          <div><span class="p-label">9th result</span><span class="p-val">85% (750/850)</span></div>
+          <div><span class="p-label">Budget</span><span class="p-val">Public-sector fees only</span></div>
+          <p class="p-note">Sample profile. Your roadmap is built on your actual marks, board, city and budget.</p>
+        </div>
+        <div class="pillars">
+          <div class="pillar">
+            <span class="p-num">Pillar 1 · Where you stand</span>
+            <h3>85% puts every stream in reach</h3>
+            <p>85% in Class 9 puts you in the top band for any FSc stream at a good government college. Your 10th board exams decide your final Matric percentage — and Matric counts <strong>10% in the MDCAT aggregate</strong> and <strong>17% in the ECAT aggregate</strong>, so every mark now is worth more later.<a class="src" href="https://m.ewaraq.com/exams/mdcat" target="_blank" rel="noopener">↗</a><a class="src" href="https://m.ewaraq.com/exams/ecat" target="_blank" rel="noopener">↗</a></p>
+            <div class="callout">10th board exams run Mar–Apr (2026: 27 Mar–16 Apr, BISE Lahore); the result typically lands in early August (2026: 6 Aug).<a class="src" href="https://iubfun.com/bise-lahore-date-sheet/" target="_blank" rel="noopener">↗</a></div>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 2 · Field decision</span>
+            <h3>Three realistic paths</h3>
+            <ul>
+              <li><strong>Pre-Medical → MDCAT:</strong> a public MBBS seat needs a 93.5%+ aggregate (UHS 2025–26 closings 93.5–94.9%). Only pick it if you can hold 90%+ through FSc.</li>
+              <li><strong>Pre-Engineering → ECAT:</strong> UET Lahore CS closed at 85.37% aggregate (Fall 2026, 4th list). Needs strong Maths + Physics.</li>
+              <li><strong>ICS → NUST / FAST:</strong> NUST BS CS closes ≈76–81%; FAST Lahore BS CS 76–78%. The lowest merit bar of the three — but CS graduate unemployment is 22.6%, so skills decide.<a class="src" href="https://pide.org.pk/research/disaggregating-the-graduate-unemployment-in-pakistan/" target="_blank" rel="noopener">↗</a></li>
+            </ul>
+          </div>
+          <div class="pillar wide">
+            <span class="p-num">Pillar 3 · Target list</span>
+            <h3>Where each stream leads</h3>
+            <table class="merit-table">
+              <tr><th>Stream</th><th>Leads to</th><th>Closing merit</th><th>Fee</th></tr>
+              <tr><td class="m-name">Pre-Medical</td><td>Public MBBS (UHS)</td><td>93.5–94.9% aggregate<a class="src" href="https://www.dawn.com/news/1960167" target="_blank" rel="noopener">↗</a></td><td>≈Rs 18,000 / year</td></tr>
+              <tr><td class="m-name">Pre-Engineering</td><td>UET Lahore — BS CS</td><td>85.37% (Fall 2026, 4th list)<a class="src" href="https://www.ilmkidunya.com/colleges/university-of-engineering-and-technology-uet-lahore-merit-lists.aspx" target="_blank" rel="noopener">↗</a></td><td>Rs 68,000–97,000 / sem (subsidised)<a class="src" href="https://blog.maqsad.io/blog/uet-fee-structure" target="_blank" rel="noopener">↗</a></td></tr>
+              <tr><td class="m-name">ICS</td><td>NUST — BS CS</td><td>≈76–81% aggregate (reported)<span class="m-note">NUST does not publish official closing lists</span></td><td>Rs 197,050 / sem<a class="src" href="https://blog.maqsad.io/blog/nust-fee-structure" target="_blank" rel="noopener">↗</a></td></tr>
+              <tr><td class="m-name">ICS</td><td>FAST — BS CS (Lahore)</td><td>76–78% aggregate<a class="src" href="https://www.examora.io/merit-guide?uni=fast&tab=fees" target="_blank" rel="noopener">↗</a></td><td>Rs 12,000 / credit hr (≈Rs 180,000 / sem)<a class="src" href="https://www.parhaikrlo.com/blog/fast-entry-test-2027-date-registration" target="_blank" rel="noopener">↗</a></td></tr>
+            </table>
+            <p class="small" style="margin-top:12px;">Merits are 2025–26 / Fall 2026 closings; they shift every year. Your roadmap uses the latest published list.</p>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 4 · Exam plan</span>
+            <h3>The next two years, dated</h3>
+            <ul>
+              <li><strong>10th board exams:</strong> Mar–Apr (2026 pattern: 27 Mar–16 Apr, BISE Lahore); result early Aug.</li>
+              <li><strong>Inter exams:</strong> May–Jul (2026: 12th class 20 May–12 Jun, BISE Lahore).</li>
+              <li><strong>Entry tests come after Inter:</strong> MDCAT (Sept), ECAT (Mar–Jun, two phases), NET (several series a year).</li>
+              <li><strong>Prep:</strong> board syllabus + past papers first. Entry-test prep starts in 2nd year, not before.</li>
+            </ul>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 5 · Job path</span>
+            <h3>What each stream pays first</h3>
+            <ul>
+              <li><strong>Doctor:</strong> house job ≈Rs 50,000–100,000/month; Medical Officer (BPS-17) ≈Rs 100,000–150,000/month incl. allowances.</li>
+              <li><strong>Engineer:</strong> fresh ≈Rs 40,000–70,000/month.</li>
+              <li><strong>Software:</strong> fresh ≈Rs 50,000–80,000/month; typical first offer Rs 60,000–70,000.<a class="src" href="https://pk.indeed.com/career/software-engineer/salaries" target="_blank" rel="noopener">↗</a></li>
+            </ul>
+            <div class="callout">These are market ranges from published salary data — not promises. Your first salary depends on skills, city and employer.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ PRE-MEDICAL ============ -->
+      <div class="roadmap-panel active" id="rm-premed" role="tabpanel">
+        <div class="profile-strip">
+          <div><span class="p-label">Student</span><span class="p-val">Ahmed</span></div>
+          <div><span class="p-label">Class</span><span class="p-val">FSc Pre-Medical · Lahore</span></div>
+          <div><span class="p-label">Marks</span><span class="p-val">Part-I 92% · Matric 95%</span></div>
+          <div><span class="p-label">Budget</span><span class="p-val">Public preferred; private up to Rs 1.9M/yr</span></div>
+          <p class="p-note">Sample profile. Your roadmap is built on your actual marks, board, city and budget.</p>
+        </div>
+        <div class="pillars">
+          <div class="pillar">
+            <span class="p-num">Pillar 1 · Where you stand</span>
+            <h3>The maths of a public MBBS seat</h3>
+            <p>Your aggregate = <strong>MDCAT 50% + FSc 40% + Matric 10%</strong>.<a class="src" href="https://m.ewaraq.com/exams/mdcat" target="_blank" rel="noopener">↗</a> With Matric 95% and FSc 92%, you need roughly <strong>94.7% in MDCAT</strong> to reach the lowest public MBBS closing (93.63%) — and <strong>≈97% for KEMU</strong> (94.87%).</p>
+            <div class="callout">Worked example: MDCAT 95% → 47.5 + 36.8 + 9.5 = <strong>93.8%</strong> — enough for the lower public colleges. This is arithmetic, not a prediction: your FSc Part-II result changes the numbers, and your roadmap re-runs them with your actual marks.</div>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 2 · Field decision</span>
+            <h3>Four realistic paths</h3>
+            <ul>
+              <li><strong>MBBS (public):</strong> 17 UHS colleges, closings 93.5–94.9% (2025–26 final list). Fee ≈Rs 18,000/year.<a class="src" href="https://www.dawn.com/news/1960167" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>BDS (public):</strong> lowest dental closing ≈93.42% — a slightly lower bar than MBBS.<a class="src" href="https://educationinkarachi.net/punjab-medical-colleges-closing-percentages/" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>MBBS (private):</strong> PMDC fee cap Rs 1.89M/year for 2025–26. Only if the budget allows — and check the college's PMDC recognition first.<a class="src" href="https://www.dawn.com/news/1970938" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>Allied health (DPT, MLT, Nursing):</strong> lower merit bars, growing demand. Merits vary by college — your roadmap lists them with current figures.</li>
+            </ul>
+          </div>
+          <div class="pillar wide">
+            <span class="p-num">Pillar 3 · Target list</span>
+            <h3>UHS public medical colleges — 2025–26 final open-merit closings</h3>
+            <table class="merit-table">
+              <tr><th>College</th><th>Closing merit</th><th>Annual fee</th></tr>
+              <tr><td class="m-name">King Edward Medical University, Lahore</td><td>94.87%</td><td>≈Rs 18,000</td></tr>
+              <tr><td class="m-name">Allama Iqbal Medical College, Lahore</td><td>94.45%</td><td>≈Rs 18,000</td></tr>
+              <tr><td class="m-name">Services Institute of Medical Sciences, Lahore</td><td>94.27%</td><td>≈Rs 18,000</td></tr>
+              <tr><td class="m-name">Nishtar Medical College, Multan</td><td>94.20%</td><td>≈Rs 18,000</td></tr>
+              <tr><td class="m-name">Rawalpindi Medical University</td><td>94.00%</td><td>≈Rs 18,000</td></tr>
+              <tr><td class="m-name">Fatima Jinnah Medical University, Lahore</td><td>93.87%</td><td>≈Rs 18,000</td></tr>
+              <tr><td class="m-name">Punjab Medical College, Faisalabad</td><td>93.87%</td><td>≈Rs 18,000</td></tr>
+              <tr><td class="m-name">Nawaz Sharif Medical College, Gujrat</td><td>93.71%</td><td>≈Rs 18,000</td></tr>
+              <tr><td class="m-name">Narowal Medical College <span class="m-note">Lowest public MBBS closing</span></td><td>93.63%</td><td>≈Rs 18,000</td></tr>
+            </table>
+            <p class="small" style="margin-top:12px;">Source: UHS 2025–26 final open-merit list, reported by Dawn (10 Dec 2025).<a class="src" href="https://www.dawn.com/news/1960167" target="_blank" rel="noopener">↗</a> Private MBBS is capped at Rs 1.89M/year by PMDC for 2025–26.<a class="src" href="https://www.dawn.com/news/1970938" target="_blank" rel="noopener">↗</a></p>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 4 · Exam plan</span>
+            <h3>MDCAT, dated</h3>
+            <ul>
+              <li><strong>2026 sitting:</strong> Sunday 20 Sept 2026 (rescheduled from 16 Aug); 138,158 candidates registered.<a class="src" href="https://m.ewaraq.com/exams/mdcat" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>Format:</strong> 180 MCQs — Biology 81, Chemistry 45, Physics 36, English 9, Logical Reasoning 9. No negative marking.</li>
+              <li><strong>Fee (2026):</strong> Rs 9,000 regular / Rs 13,000 late (Pakistan centres). Registration ran June–July 2026.<a class="src" href="https://www.ilmkidunya.com/mcat/mcat-test-application-process-fees.aspx" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>MDCAT 2027:</strong> date not announced yet (as of Oct 2026) — plan for a September sitting and watch pmc.gov.pk.<a class="src" href="https://maqsad.io/mdcat-2027-date" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>Prep:</strong> FSc textbooks + the PMDC syllabus, past papers, and a test series in the final six weeks.</li>
+            </ul>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 5 · Job path</span>
+            <h3>Doctor — the first five years</h3>
+            <ul>
+              <li><strong>House job (fresh MBBS):</strong> ≈Rs 50,000–100,000/month in most public hospitals.</li>
+              <li><strong>Medical Officer (BPS-17):</strong> ≈Rs 100,000–150,000/month incl. allowances.</li>
+              <li><strong>After house job:</strong> FCPS specialisation, or USMLE / PLAB for abroad — your roadmap covers the timeline and cost of each.</li>
+            </ul>
+            <div class="callout">Sources report house-job pay anywhere from Rs 30,000 to Rs 120,000 depending on hospital and province — so we show the range, not a single number. Medical graduate unemployment is 10.8% (PIDE) — the lowest of the major fields.<a class="src" href="https://pide.org.pk/research/disaggregating-the-graduate-unemployment-in-pakistan/" target="_blank" rel="noopener">↗</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ PRE-ENGINEERING ============ -->
+      <div class="roadmap-panel" id="rm-preeng" role="tabpanel">
+        <div class="profile-strip">
+          <div><span class="p-label">Student</span><span class="p-val">Bilal</span></div>
+          <div><span class="p-label">Class</span><span class="p-val">FSc Pre-Engineering · Lahore</span></div>
+          <div><span class="p-label">Marks</span><span class="p-val">Part-I 85% · Matric 88%</span></div>
+          <div><span class="p-label">Budget</span><span class="p-val">Public-sector preferred; NUST only with aid</span></div>
+          <p class="p-note">Sample profile. Your roadmap is built on your actual marks, board, city and budget.</p>
+        </div>
+        <div class="pillars">
+          <div class="pillar">
+            <span class="p-num">Pillar 1 · Where you stand</span>
+            <h3>Your FSc marks carry the aggregate</h3>
+            <p>UET aggregate = <strong>ECAT 33% + FSc Part-I 50% + Matric 17%</strong> (Fall 2026 prospectus).<a class="src" href="https://m.ewaraq.com/exams/ecat" target="_blank" rel="noopener">↗</a> Your non-ECAT part is already 57.5% — so for UET CS (closing 85.37%) you need ECAT ≈85%.</p>
+            <div class="callout">Worked example: ECAT 85% → 28.1 + 42.5 + 15.0 = <strong>85.5%</strong> — just above the CS 4th-list closing of 85.37%. For Electrical (83.33%) you'd need ECAT ≈78%; for Civil (80.96%), ≈71%.</div>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 2 · Field decision</span>
+            <h3>Four realistic paths</h3>
+            <ul>
+              <li><strong>CS at UET:</strong> closed at 85.37% (Fall 2026, 4th list) — the most competitive UET programme.</li>
+              <li><strong>Electrical / Mechanical / Civil:</strong> 80.96–83.33% — within reach at ECAT 71–78%.</li>
+              <li><strong>NUST engineering:</strong> NET-based (NET 75% + FSc 15% + Matric 10%); fee Rs 197,050/semester — needs aid at your budget.<a class="src" href="https://blog.maqsad.io/blog/nust-fee-structure" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>GIKI:</strong> ≈Rs 385,000–440,000/semester incl. mandatory hostel (2024–25 estimate) — above budget unless on scholarship.</li>
+            </ul>
+          </div>
+          <div class="pillar wide">
+            <span class="p-num">Pillar 3 · Target list</span>
+            <h3>UET Lahore (main campus, A1 morning) — Fall 2026 reported merit lists</h3>
+            <table class="merit-table">
+              <tr><th>Programme</th><th>1st list</th><th>4th list</th><th>Fee (subsidised)</th></tr>
+              <tr><td class="m-name">BS Computer Science</td><td>87.47%</td><td>85.37%</td><td>Rs 68,000–97,000 / sem</td></tr>
+              <tr><td class="m-name">BS Cybersecurity</td><td>86.54%</td><td>85.60%</td><td>Rs 68,000–97,000 / sem</td></tr>
+              <tr><td class="m-name">Electrical Engineering</td><td>85.14%</td><td>83.33%</td><td>Rs 68,000–97,000 / sem</td></tr>
+              <tr><td class="m-name">Computer Engineering</td><td>83.76%</td><td>82.11%</td><td>Rs 68,000–97,000 / sem</td></tr>
+              <tr><td class="m-name">Mechanical Engineering</td><td>83.29%</td><td>82.28%</td><td>Rs 68,000–97,000 / sem</td></tr>
+              <tr><td class="m-name">Civil Engineering</td><td>82.64%</td><td>80.96%</td><td>Rs 68,000–97,000 / sem</td></tr>
+            </table>
+            <p class="small" style="margin-top:12px;">Merits: reported Fall 2026 1st vs 4th merit lists, cross-referenced to UET's merit-report downloads — not the final walk-in cutoffs. Check the official list at admission.uet.edu.pk.<a class="src" href="https://www.ilmkidunya.com/colleges/university-of-engineering-and-technology-uet-lahore-merit-lists.aspx" target="_blank" rel="noopener">↗</a> Fees: subsidised (A1) semesters Rs 68,067–96,571; first semester Rs 107,871 incl. one-time dues; 4-year total Rs 674,114. Partially subsidised (A2): Rs 104,821–144,702/sem; total Rs 1,024,040. Source: official UET Lahore fee breakup, Fall 2026, via Maqsad.<a class="src" href="https://blog.maqsad.io/blog/uet-fee-structure" target="_blank" rel="noopener">↗</a></p>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 4 · Exam plan</span>
+            <h3>ECAT, dated</h3>
+            <ul>
+              <li><strong>2026 phases:</strong> Phase I 30 Mar–3 Apr; Phase II 16/17–21 June. Two attempts a year; the best score counts.<a class="src" href="https://m.ewaraq.com/exams/ecat" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>Format:</strong> 100 MCQs in 100 minutes, 400 marks — English 10, Physics 30, Maths 30, Chemistry / CS / Stats 30. No negative marking; computer-based.</li>
+              <li><strong>Fee:</strong> Rs 3,000 per attempt (2026). Minimum 60% in Inter for engineering; aggregate at least 50%.</li>
+              <li><strong>ECAT 2027:</strong> not announced yet — expect a similar Mar–Jun pattern.</li>
+              <li><strong>Prep:</strong> FSc Part-I is half your aggregate — protect it. ECAT practice from February.</li>
+            </ul>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 5 · Job path</span>
+            <h3>Engineer — the degree alone doesn't place you</h3>
+            <ul>
+              <li><strong>Fresh engineer:</strong> Rs 40,000–70,000/month (market range).</li>
+              <li><strong>Skills that pay:</strong> AutoCAD / SolidWorks (Mech, Civil), PLC &amp; embedded systems (Electrical), Python + data tools (all trades).</li>
+              <li><strong>Government route:</strong> PPSC / FPSC engineering posts and WAPDA / NTDC — your roadmap lists current openings and syllabi.</li>
+            </ul>
+            <div class="callout">Engineering graduate unemployment is 23.5% (PIDE) — doubled in two years. The students who get hired are the ones with skills on top of the degree.<a class="src" href="https://pide.org.pk/research/disaggregating-the-graduate-unemployment-in-pakistan/" target="_blank" rel="noopener">↗</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ CS / IT ============ -->
+      <div class="roadmap-panel" id="rm-csit" role="tabpanel">
+        <div class="profile-strip">
+          <div><span class="p-label">Student</span><span class="p-val">Fatima</span></div>
+          <div><span class="p-label">Class</span><span class="p-val">ICS · Karachi</span></div>
+          <div><span class="p-label">Marks</span><span class="p-val">Part-I 88% · Matric 90%</span></div>
+          <div><span class="p-label">Budget</span><span class="p-val">Up to Rs 200,000 / semester</span></div>
+          <p class="p-note">Sample profile. Your roadmap is built on your actual marks, board, city and budget.</p>
+        </div>
+        <div class="pillars">
+          <div class="pillar">
+            <span class="p-num">Pillar 1 · Where you stand</span>
+            <h3>The NET does most of the work</h3>
+            <p>NUST aggregate = <strong>NET 75% + FSc 15% + Matric 10%</strong>. Your non-NET part is 22.2% — so for BS CS (closing ≈76–81%) you need NET ≈72–78%.</p>
+            <div class="callout">Worked example: NET 76% → 57.0 + 13.2 + 9.0 = <strong>79.2%</strong> — inside the BS CS closing range. NET runs in several series a year and your best score counts.</div>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 2 · Field decision</span>
+            <h3>Four realistic paths</h3>
+            <ul>
+              <li><strong>NUST BS CS:</strong> closing ≈76–81% aggregate (sources differ; NUST doesn't publish official closing lists). Fee Rs 197,050/sem — inside your budget.<a class="src" href="https://blog.maqsad.io/blog/nust-fee-structure" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>FAST BS CS (Lahore):</strong> closing 76–78%; fee Rs 12,000/credit hour (≈Rs 180,000 for a 15-credit semester). The strongest CS industry links in Pakistan.<a class="src" href="https://www.parhaikrlo.com/blog/fast-entry-test-2027-date-registration" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>COMSATS Islamabad:</strong> ≈Rs 146,000–151,500/semester — the budget-friendly option.<a class="src" href="https://blog.maqsad.io/blog/uet-vs-comsats" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>LUMS BSCS:</strong> ≈Rs 4.4–5.9 lakh/semester (2026 listings vary; verify on lums.edu.pk). NOP covers full tuition for low-income students — worth applying if eligible.</li>
+            </ul>
+          </div>
+          <div class="pillar wide">
+            <span class="p-num">Pillar 3 · Target list</span>
+            <h3>CS targets, with merits and fees</h3>
+            <table class="merit-table">
+              <tr><th>University</th><th>Programme</th><th>Closing merit</th><th>Fee</th></tr>
+              <tr><td class="m-name">NUST</td><td>BS CS</td><td>≈76–81% aggregate (reported)<span class="m-note">NUST does not publish official closing lists</span></td><td>Rs 197,050 / sem</td></tr>
+              <tr><td class="m-name">FAST-NUCES (Lahore)</td><td>BS CS</td><td>76–78% aggregate<a class="src" href="https://www.examora.io/merit-guide?uni=fast&tab=fees" target="_blank" rel="noopener">↗</a></td><td>Rs 12,000 / credit hr</td></tr>
+              <tr><td class="m-name">FAST-NUCES (Islamabad)</td><td>BS CS</td><td>≈78% (unofficial)<a class="src" href="https://meritly.scrivilo-app.com/calculators/fast/bs-computer-science" target="_blank" rel="noopener">↗</a></td><td>Rs 12,000 / credit hr</td></tr>
+              <tr><td class="m-name">COMSATS Islamabad</td><td>BS CS</td><td>Check the latest merit list</td><td>≈Rs 146,000–151,500 / sem</td></tr>
+              <tr><td class="m-name">LUMS</td><td>BSCS</td><td>SAT / LCAT-based</td><td>≈Rs 4.4–5.9 lakh / sem (listings vary)</td></tr>
+            </table>
+            <p class="small" style="margin-top:12px;">FAST merit = NU Test 50% + FSc 40% + Matric 10%. NUST first semester is ≈Rs 247,000 incl. one-time admission fee Rs 35,000 + security Rs 10,000; 4-year total ≈Rs 1.66M.<a class="src" href="https://blog.maqsad.io/blog/nust-fee-structure" target="_blank" rel="noopener">↗</a></p>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 4 · Exam plan</span>
+            <h3>NET + NU Test, dated</h3>
+            <ul>
+              <li><strong>NET:</strong> 3–4 series a year; best score counts. NET-1 usually Nov–Dec, NET-2 Feb–Mar.</li>
+              <li><strong>FAST NU Test:</strong> application fee Rs 3,000 (+ Rs 500 per extra campus). Each test type can be taken only once per cycle; minimum 50% in the test. 2027 dates not announced yet.<a class="src" href="https://www.parhaikrlo.com/blog/fast-entry-test-2027-date-registration" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>Eligibility (FAST Computing):</strong> Matric 60%, FSc 50%, Maths required.</li>
+              <li><strong>Prep:</strong> FSc Maths + English are the core; NET / NU pattern practice from January.</li>
+            </ul>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 5 · Job path</span>
+            <h3>Software — the portfolio decides</h3>
+            <ul>
+              <li><strong>Fresh software engineer:</strong> Rs 50,000–80,000/month; typical first offer Rs 60,000–70,000.<a class="src" href="https://pk.indeed.com/career/software-engineer/salaries" target="_blank" rel="noopener">↗</a><a class="src" href="https://www.athedu.uk/computing-careers-in-pakistan-jobs-salaries-skills-guide/" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>Skills:</strong> Python or JavaScript, data structures, Git, one framework (React or Django), and 2–3 real projects on GitHub.</li>
+              <li><strong>Free start:</strong> Harvard CS50 and freeCodeCamp — both free, both recognised by Pakistani employers.</li>
+            </ul>
+            <div class="callout">CS graduate unemployment is 22.6% (PIDE) — the degree doesn't guarantee a job; a portfolio does.<a class="src" href="https://pide.org.pk/research/disaggregating-the-graduate-unemployment-in-pakistan/" target="_blank" rel="noopener">↗</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ COMMERCE ============ -->
+      <div class="roadmap-panel" id="rm-commerce" role="tabpanel">
+        <div class="profile-strip">
+          <div><span class="p-label">Student</span><span class="p-val">Hassan</span></div>
+          <div><span class="p-label">Class</span><span class="p-val">ICom · Faisalabad</span></div>
+          <div><span class="p-label">Marks</span><span class="p-val">Part-I 82% · Matric 84%</span></div>
+          <div><span class="p-label">Budget</span><span class="p-val">Public-sector or mid-fee private</span></div>
+          <p class="p-note">Sample profile. Your roadmap is built on your actual marks, board, city and budget.</p>
+        </div>
+        <div class="pillars">
+          <div class="pillar">
+            <span class="p-num">Pillar 1 · Where you stand</span>
+            <h3>The test decides your seat, not your marks</h3>
+            <p>BBA admissions at the top schools are test-based. Your 82% clears every eligibility bar — the entry test decides where you land. IBA BBA is ≈Rs 260,000/semester; LUMS BBA is in the Rs 4.4–5.9 lakh range (2026 listings vary) — so IBA and NUST are your realistic targets, LUMS only with NOP aid.</p>
+            <div class="callout">IBA Karachi is a <strong>public autonomous</strong> institution (Government of Sindh) — not a private university — which is why its fee sits well below LUMS.</div>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 2 · Field decision</span>
+            <h3>Six realistic paths</h3>
+            <ul>
+              <li><strong>BBA at IBA Karachi:</strong> ≈Rs 260,000/semester; test-based admission.</li>
+              <li><strong>BBA at NUST:</strong> Rs 275,400/semester (Business / Social Sciences); NET-based.<a class="src" href="https://blog.maqsad.io/blog/nust-fee-structure" target="_blank" rel="noopener">↗</a></li>
+              <li><strong>BBA at LUMS:</strong> ≈Rs 4.4–5.9 lakh/semester — apply for NOP (full tuition for low-income students) if eligible.</li>
+              <li><strong>CA (ICAP):</strong> start after Inter; trainee stipend Rs 25,000–60,000/month during articles; a qualified CA earns Rs 150,000–300,000+/month.</li>
+              <li><strong>ACCA:</strong> global qualification; exemptions for prior study via the ACCA exemptions calculator (accaglobal.com).</li>
+              <li><strong>BCom / BS Accounting (public university):</strong> the lowest fees — check pu.edu.pk and uok.edu.pk for current fee schedules.</li>
+            </ul>
+          </div>
+          <div class="pillar wide">
+            <span class="p-num">Pillar 3 · Target list</span>
+            <h3>Commerce targets, with fees</h3>
+            <table class="merit-table">
+              <tr><th>Route</th><th>Programme</th><th>Admission</th><th>Fee / pay</th></tr>
+              <tr><td class="m-name">IBA Karachi</td><td>BBA</td><td>IBA entry test</td><td>≈Rs 260,000 / sem</td></tr>
+              <tr><td class="m-name">NUST</td><td>BBA</td><td>NET-based</td><td>Rs 275,400 / sem</td></tr>
+              <tr><td class="m-name">LUMS</td><td>BBA</td><td>SAT / LCAT-based</td><td>≈Rs 4.4–5.9 lakh / sem (listings vary)</td></tr>
+              <tr><td class="m-name">ICAP</td><td>CA</td><td>AFC entry test</td><td>Trainee stipend Rs 25,000–60,000 / mo</td></tr>
+              <tr><td class="m-name">Public university</td><td>BCom / BS Accounting</td><td>Merit-based</td><td>Check the university fee schedule</td></tr>
+            </table>
+            <p class="small" style="margin-top:12px;">IBA BBA fee per Uniguide (updated 31 Oct 2026). NUST business fee per Maqsad, 2025–26 official figures.<a class="src" href="https://blog.maqsad.io/blog/nust-fee-structure" target="_blank" rel="noopener">↗</a></p>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 4 · Exam plan</span>
+            <h3>Tests, in order</h3>
+            <ul>
+              <li><strong>IBA test:</strong> English + Maths, in the spring / summer admission cycle — check iba.edu.pk for the current schedule.</li>
+              <li><strong>NUST NET (business):</strong> English + Maths + IQ; 3–4 series a year.</li>
+              <li><strong>LUMS:</strong> SAT or LCAT; the NOP application runs alongside admission.</li>
+              <li><strong>CA route:</strong> ICAP Assessment of Fundamental Competencies (AFC) — check icap.org.pk for dates.</li>
+            </ul>
+            <div class="callout">No dates are stated here because the 2027 schedules were not published at the time of writing — your roadmap is updated with the live dates when you request it.</div>
+          </div>
+          <div class="pillar">
+            <span class="p-num">Pillar 5 · Job path</span>
+            <h3>Commerce — skills set the salary</h3>
+            <ul>
+              <li><strong>Fresh BBA:</strong> Rs 40,000–80,000/month; bank Management Trainee Officer programmes pay up to ≈Rs 100,000/month.</li>
+              <li><strong>Skills:</strong> Excel + financial modelling, SQL, Power BI — these three decide your first salary more than the university name.</li>
+              <li><strong>CA / ACCA route:</strong> the longest path, the highest ceiling — qualified CAs start at Rs 150,000–300,000+/month.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:36px;" class="reveal">
+        <a href="#price" class="btn btn-dark btn-md">Get my roadmap — Rs 999 →</a>
+        <p class="small" style="margin-top:12px;">Your roadmap is built on your marks — these are samples, not yours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · Closing statement -->
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <p class="scroll-fade">A roadmap is not a guess with better formatting. It is <em>the latest merit list,</em> the real fee, the dated plan — checked, then sent to your WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- 8 · Price + request -->
+  <section id="price" style="padding-top:0;">
+    <div class="wrap">
+      <div class="price-grid">
+        <div class="reveal">
+          <p class="eyebrow">Price</p>
+          <h2 style="margin:16px 0 20px;">One roadmap.<br>Rs 999. Once.</h2>
+          <p class="price-big"><span class="cur">Rs</span>999</p>
+          <p class="price-note">Launch price — one-time payment. No subscription, no upsell, no hidden fee.</p>
+          <ul class="price-list">
+            <li>Your verified roadmap, built on your marks</li>
+            <li>Target universities with closing merits + fees</li>
+            <li>Dated exam + application plan</li>
+            <li>First-salary ranges from published data</li>
+            <li>Delivered on WhatsApp — no app to install</li>
+          </ul>
+        </div>
+
+        <div class="form-card reveal">
+          <h3>Get my roadmap</h3>
+          <p class="form-sub">Rs 999, one time. We reply on WhatsApp.</p>
+          <form class="roadmap-form" novalidate>
+            <div class="form-fields">
+              <div class="field" data-field="name">
+                <label for="name-price">Your name</label>
+                <input id="name-price" name="name" type="text" autocomplete="name" placeholder="e.g. Ahmed Raza">
+                <p class="error"></p>
+              </div>
+              <div class="field" data-field="whatsapp">
+                <label for="wa-price">WhatsApp number</label>
+                <input id="wa-price" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="0300-1234567">
+                <p class="hint">Your roadmap arrives on this number.</p>
+                <p class="error"></p>
+              </div>
+              <div class="form-row">
+                <div class="field" data-field="class">
+                  <label for="class-price">Class</label>
+                  <select id="class-price" name="class">
+                    <option value="Matric" selected>Matric</option>
+                    <option value="Inter">Inter</option>
+                  </select>
+                </div>
+                <div class="field" data-field="track">
+                  <label for="track-price">Track</label>
+                  <select id="track-price" name="track">
+                    <option value="Stream choice" selected>Stream choice</option>
+                    <option value="Pre-Medical">Pre-Medical</option>
+                    <option value="Pre-Engineering">Pre-Engineering</option>
+                    <option value="CS/IT">CS / IT</option>
+                    <option value="Commerce">Commerce</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field" data-field="marks">
+                <label for="marks-price">Marks <span style="text-transform:none;letter-spacing:0;">(optional)</span></label>
+                <input id="marks-price" name="marks" type="text" placeholder="e.g. 9th: 85% · Matric: 92%">
+              </div>
+              <button type="submit" class="btn btn-lime btn-lg">Get my roadmap →</button>
+              <p class="tiny" style="margin-top:12px;text-align:center;">No account. No app to install. Your number is only used to send your roadmap.</p>
+              <div class="form-status" role="alert"></div>
+            </div>
+          </form>
+          <div class="form-success" role="status">
+            <div class="check">✓</div>
+            <h3>Request received</h3>
+            <p>We'll message you on WhatsApp with your roadmap. Usually within one working day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sources -->
+  <section class="sources" id="sources">
+    <div class="wrap">
+      <h3>Sources</h3>
+      <p class="small" style="margin-bottom:18px;">Every figure on this page comes from one of the sources below, checked November 2026. Figures change every year — your roadmap uses the latest published list. Where sources disagreed, the page shows the range and says so.</p>
+      <ol>
+        <li>Economic Survey 2025–26 enrolment (secondary 5.42M, higher secondary 2.97M) — <a href="https://arynews.tv/pakistan-pre-primary-enrolment-drops-economic-survey-2025-26" target="_blank" rel="noopener">ARY News, 12 Jun 2026</a></li>
+        <li>Graduate unemployment 18.3% — Gallup Pakistan analysis of LFS 2024–25 — <a href="https://www.nation.com.pk/24-Sep-2026/degrees-enough" target="_blank" rel="noopener">The Nation, 24 Sep 2026</a></li>
+        <li>Graduate unemployment 10.8% — PBS / ICLS-13 measure — <a href="https://medium.com/@syedkazimjamal/first-job-in-pakistan-what-fresh-graduates-wish-employers-understood-95d05c248168" target="_blank" rel="noopener">Medium</a></li>
+        <li>~1 counsellor per 8,000 students; &lt;15% of South Asian public schools have trained counsellors — UNESCO 2023 — <a href="https://sindhcourier.com/bridging-the-career-guidance-gap/" target="_blank" rel="noopener">Sindh Courier</a></li>
+        <li>Field mismatch: engineering 23.5%, CS 22.6%, agriculture 29.4%, medical 10.8% unemployed — <a href="https://pide.org.pk/research/disaggregating-the-graduate-unemployment-in-pakistan/" target="_blank" rel="noopener">PIDE Knowledge Brief No. 100</a></li>
+        <li>MDCAT 2026: date (20 Sept 2026), 138,158 candidates, 180-MCQ format, aggregate formula (MDCAT 50% + FSc 40% + Matric 10%) — <a href="https://m.ewaraq.com/exams/mdcat" target="_blank" rel="noopener">ewaraq</a></li>
+        <li>MDCAT 2027 date not announced yet — <a href="https://maqsad.io/mdcat-2027-date" target="_blank" rel="noopener">Maqsad</a></li>
+        <li>MDCAT 2026 fees: Rs 9,000 regular / Rs 13,000 late — <a href="https://www.ilmkidunya.com/mcat/mcat-test-application-process-fees.aspx" target="_blank" rel="noopener">ilmKidunya</a></li>
+        <li>UHS MBBS 2025–26 final open-merit closings + public fee ≈Rs 18,000/year — <a href="https://www.dawn.com/news/1960167" target="_blank" rel="noopener">Dawn, 10 Dec 2025</a></li>
+        <li>BDS lowest closing ≈93.42% — <a href="https://educationinkarachi.net/punjab-medical-colleges-closing-percentages/" target="_blank" rel="noopener">Education in Karachi</a></li>
+        <li>Private MBBS fee cap Rs 1.89M/year (2025–26) — <a href="https://www.dawn.com/news/1970938" target="_blank" rel="noopener">Dawn, 4 Feb 2026</a></li>
+        <li>ECAT formula (33% ECAT + 50% FSc Part-I + 17% Matric), format, 2026 phases, Rs 3,000/attempt — <a href="https://m.ewaraq.com/exams/ecat" target="_blank" rel="noopener">ewaraq</a> (checked against the Fall 2026 prospectus)</li>
+        <li>UET Lahore Fall 2026 reported 1st / 4th merit lists (A1, main campus) — <a href="https://www.ilmkidunya.com/colleges/university-of-engineering-and-technology-uet-lahore-merit-lists.aspx" target="_blank" rel="noopener">ilmKidunya</a> (cross-referenced to UET merit-report downloads)</li>
+        <li>UET Lahore fee breakup, Fall 2026 — <a href="https://blog.maqsad.io/blog/uet-fee-structure" target="_blank" rel="noopener">Maqsad</a> (citing the official UET Lahore fee breakup)</li>
+        <li>NUST fee 2025–26: Engineering/Computing Rs 197,050/sem; Business Rs 275,400/sem; first semester ≈Rs 247,000 — <a href="https://blog.maqsad.io/blog/nust-fee-structure" target="_blank" rel="noopener">Maqsad</a> (citing official figures)</li>
+        <li>FAST merit formula (NU Test 50% + FSc 40% + Matric 10%), Rs 12,000/credit hour, Rs 3,000 application fee, 2027 dates not announced — <a href="https://www.parhaikrlo.com/blog/fast-entry-test-2027-date-registration" target="_blank" rel="noopener">Parhai Krlo</a> (checked against nu.edu.pk, Oct 2026)</li>
+        <li>FAST BS CS closings: Lahore 76–78% — <a href="https://www.examora.io/merit-guide?uni=fast&tab=fees" target="_blank" rel="noopener">Examora</a>; Islamabad ≈78% (unofficial) — <a href="https://meritly.scrivilo-app.com/calculators/fast/bs-computer-science" target="_blank" rel="noopener">Meritly</a></li>
+        <li>COMSATS Islamabad computing fees ≈Rs 146,000–151,500/semester — <a href="https://blog.maqsad.io/blog/uet-vs-comsats" target="_blank" rel="noopener">Maqsad</a></li>
+        <li>BISE Lahore 2026 exam dates + result dates — <a href="https://iubfun.com/bise-lahore-date-sheet/" target="_blank" rel="noopener">iubfun</a></li>
+        <li>Software engineer salaries: fresh Rs 50,000–80,000/month — <a href="https://pk.indeed.com/career/software-engineer/salaries" target="_blank" rel="noopener">Indeed Pakistan</a> and <a href="https://www.athedu.uk/computing-careers-in-pakistan-jobs-salaries-skills-guide/" target="_blank" rel="noopener">ATHEdu</a></li>
+        <li>Fresh engineer (Rs 40,000–70,000), fresh BBA (Rs 40,000–80,000), bank MTO (up to ≈Rs 100,000), house job (Rs 30,000–120,000 range), CA trainee (Rs 25,000–60,000) and qualified CA (Rs 150,000–300,000+) — ranges compiled from WhatJobs, hrbs.com.pk, drjobpro, jobscentre, acciyo and ictbusinessschool listings, Nov 2026. Salary figures are market ranges, not guarantees.</li>
+        <li>LUMS undergraduate fee ≈Rs 4.4–5.9 lakh/semester — 2026 listings conflict (ilmKidunya, Maqsad); verify on <a href="https://www.lums.edu.pk" target="_blank" rel="noopener">lums.edu.pk</a>. GIKI ≈Rs 385,000–440,000/semester incl. hostel — 2024–25 estimate (boardrankings.pk). IBA BBA ≈Rs 260,000/semester — Uniguide, updated 31 Oct 2026.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 9 · Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="wordmark">cmap<em>.</em></span>
+          <p>A roadmap is not a guess with better formatting. It is the latest merit list, the real fee, the dated plan — checked, then sent to your WhatsApp.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#roadmaps">Sample roadmaps</a>
+          <a href="#how">How it works</a>
+          <a href="#why">Why not ChatGPT</a>
+          <a href="#price">Price — Rs 999</a>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <span>Career roadmaps for Matric &amp; Inter students in Pakistan.</span>
+          <a href="#sources">Sources for every figure</a>
+          <span>Data checked November 2026.</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> cmap · Made in Pakistan</span>
+        <span>Merits, fees and salaries change every year — your roadmap uses the latest list.</span>
+      </div>
+      <div class="ghost" aria-hidden="true">cmap</div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta" role="complementary">
+    <span class="sc-text">Your roadmap — <strong>Rs 999</strong> one time</span>
+    <a href="#price" class="btn btn-lime btn-sm">Get mine →</a>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
