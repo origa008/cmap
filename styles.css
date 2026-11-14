@@ -290,7 +290,7 @@ section { padding: 88px 0; position: relative; z-index: 1; }
 .scroll-fade {
   font-size: clamp(1.7rem, 4.4vw, 3rem);
   font-style: italic;
-  line-height: 0.75;
+  line-height: 0.9;
   letter-spacing: -0.025em;
   max-width: 900px;
 }
