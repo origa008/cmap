@@ -147,7 +147,9 @@ module.exports = async function handler(req, res) {
       );
 
       if (notionRes.ok) {
-        return res.status(200).json({ ok: true });
+        // Return the Notion page id so the payment step can link the
+        // verification result back to this lead (Status -> Paid).
+        return res.status(200).json({ ok: true, ref: data && data.id ? data.id : null });
       }
 
       lastError = { status: notionRes.status, code: data && data.code, message: data && data.message };

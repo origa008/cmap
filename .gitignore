@@ -3,3 +3,7 @@
 .env*.local
 node_modules/
 .vercel
+tessdata/
+# tessdata/ is downloaded at build time (scripts/fetch-tessdata.js) — never committed.
+files/
+# files/ is decoded at build time (scripts/decode-pdfs.js) from assets-b64/ — never committed.

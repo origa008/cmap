@@ -209,11 +209,12 @@
         })
         .then(function (result) {
           if (result.status === 200 && result.data && result.data.ok) {
-            // Success state replaces the form.
-            var fields = form.querySelector(".form-fields");
-            var success = form.parentElement.querySelector(".form-success");
-            if (fields) fields.style.display = "none";
-            if (success) success.classList.add("show");
+            // Request saved — open the files page (the 6 core roadmaps are
+            // free; the Notion page id (ref) links a later premium unlock
+            // back to this lead).
+            var ref = result.data.ref || "";
+            var filesUrl = "/files" + (ref ? "?ref=" + encodeURIComponent(ref) : "");
+            window.location.href = filesUrl;
           } else {
             var msg = (result.data && result.data.error) ||
               "Something went wrong. Please try again.";

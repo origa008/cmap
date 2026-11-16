@@ -1,0 +1,15 @@
+{
+  "name": "cmap-site",
+  "version": "1.0.0",
+  "description": "Career-roadmap landing page for Matric & Inter students in Pakistan. Static site (plain HTML/CSS/JS) + one Vercel serverless function that writes form submissions into the Notion database **\"cmap – Roadmap Requests\"**.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tesseract.js": "^7.0.0"
+  }
+}
